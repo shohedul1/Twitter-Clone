@@ -19,7 +19,7 @@ dotenv.config();
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:5173', // Allow requests from your frontend
+    origin: 'https://twitter-clone-pink-delta.vercel.app', // Allow requests from your frontend
     methods: 'GET,POST,PUT,DELETE',  // Specify allowed HTTP methods
     credentials: true                // Allow credentials (if needed)
 }));
