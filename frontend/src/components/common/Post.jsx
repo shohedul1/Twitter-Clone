@@ -81,7 +81,7 @@ const Post = ({ post }) => {
     const { mutate: commentPost, isPending: isCommenting } = useMutation({
         mutationFn: async () => {
             try {
-                const res = await fetch(`https://twitter-clone-mgjy.onrender.com/api/posts/comment/${post._id}`, {
+                const res = await fetch(`/api/posts/comment/${post._id}`, {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
